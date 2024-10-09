@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банківська Система</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Банківська Система</h1>
+        <div id="menu">
+            <button onclick="showCreateAccount()">Створити новий рахунок</button>
+            <button onclick="showCheckBalance()">Перевірити баланс</button>
+            <button onclick="showDeposit()">Поповнити рахунок</button>
+            <button onclick="showWithdraw()">Зняти кошти</button>
+            <button onclick="showTransfer()">Переказати кошти</button>
+            <button onclick="showHistory()">Переглянути історію транзакцій</button>
+            <button onclick="lockAccount()">Заблокувати рахунок</button>
+            <button onclick="unlockAccount()">Розблокувати рахунок</button>
+        </div>
+        
+        <!-- Секція для відображення дій -->
+        <div id="action-section">
+            <h2 id="action-title">Виберіть дію</h2>
+            <div id="form-content"></div>
+        </div>
+
+        <!-- Повідомлення про дії -->
+        <div id="message-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
